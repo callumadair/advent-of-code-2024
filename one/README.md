@@ -110,3 +110,7 @@ The last number, 3, appears in the right list three times; the similarity score 
 So, for these example lists, the similarity score at the end of this process is 31 (9 + 4 + 0 + 0 + 9 + 9).
 
 Once again consider your left and right lists. What is their similarity score?
+
+Your puzzle answer was 21306195.
+
+Both parts of this puzzle are complete! They provide two gold stars: **

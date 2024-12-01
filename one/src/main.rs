@@ -50,3 +50,10 @@ fn calculate_distance(
         .map(|(l, r)| l.abs_diff(*r))
         .sum()
 }
+
+fn calculate_similarity(
+    mut left: Vec<usize>,
+    mut right: Vec<usize>,
+) -> usize {
+0
+}

@@ -79,19 +79,6 @@ enum ValueDirection
     Descending,
 }
 
-impl ValueDirection
-{
-    fn is_assigned(&self) -> bool
-    {
-        match *self
-        {
-            ValueDirection::None => false,
-            ValueDirection::Ascending => true,
-            ValueDirection::Descending => true,
-        }
-    }
-}
-
 fn calculate_safety_with_dampener(path: &Path) -> Result<usize>
 {
     let mut safety_count = 0;
@@ -134,6 +121,7 @@ fn calculate_safety_with_dampener(path: &Path) -> Result<usize>
                 }
             }
 
+            // Not 100% sure about this one lol.
             let diff = cur.abs_diff(last);
             if !(1..=3).contains(&diff)
             {

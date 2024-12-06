@@ -81,7 +81,7 @@ fn calculate_product_total_with_conditionals(input: &str) -> Result<usize>
 
             if activated
             {
-                total += &capture["left"].parse::<usize>()? * &capture["right"].parse::<usize>()?;
+                total += capture["left"].parse::<usize>()? * capture["right"].parse::<usize>()?;
             }
         }
         total

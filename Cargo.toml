@@ -5,7 +5,7 @@ edition = "2021"
 
 [workspace]
 resolver = "2"
-members = [ "four","one", "three", "two"]
+members = [ "2024/four","2024/one", "2024/three", "2024/two"]
 
 [workspace.dependencies]
 color-eyre = "0.6.3"

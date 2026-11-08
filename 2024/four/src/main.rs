@@ -13,6 +13,8 @@ fn main() -> Result<()>
 {
     let xmas_frequency = perform_word_search(Path::new("./src/input.txt"))?;
     println!("The total value for part one is {xmas_frequency}.");
+    let xmas_frequency = perform_x_mas_search(Path::new("./src/input.txt"))?;
+    println!("The total value for part one is {xmas_frequency}.");
     Ok(())
 }
 
@@ -150,4 +152,22 @@ fn perform_word_search(path: &Path) -> Result<usize>
         }
     }
     Ok(xmas_count)
+}
+
+fn perform_x_mas_search(path: &Path) -> Result<usize>
+{
+    let matrix = load_file(path)?;
+
+    let mut x_mas_count = 0;
+
+    for i in 0..matrix.len()
+    {
+        for j in 0..matrix[i].len()
+        {
+            if matrix[i][j] == 'M'
+            {}
+        }
+    }
+
+    Ok(x_mas_count)
 }

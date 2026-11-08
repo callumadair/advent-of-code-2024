@@ -57,8 +57,8 @@ fn perform_word_search(path: &Path) -> Result<usize>
 
             if matrix[i][j] == 'X'
             {
-                // Check characters that are directly above and above to the
-                // left and right.
+                // Check characters that are directly above
+                // and above to the left and right.
                 if above_available
                 {
                     // Check line directly above.
@@ -136,16 +136,18 @@ fn perform_word_search(path: &Path) -> Result<usize>
                 }
             }
 
-            // This is the last loop iteration where right is valid, so
-            // we set the bool to false before the next iteration.
+            // This is the last loop iteration where right
+            // is valid, so we set the bool to false before
+            // the next iteration.
             if j == matrix[i].len() - (WORD_SEARCH_SEQUENCE.len())
             {
                 right_available = false;
             }
         }
 
-        // This is the last loop iteration where below is valid, so
-        // we set the bool to false before the next iteration.
+        // This is the last loop iteration where below is
+        // valid, so we set the bool to false before the
+        // next iteration.
         if i == matrix.len() - (WORD_SEARCH_SEQUENCE.len())
         {
             below_available = false;
